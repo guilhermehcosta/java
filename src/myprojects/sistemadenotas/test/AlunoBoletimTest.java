@@ -1,12 +1,11 @@
 package myprojects.sistemadenotas.test;
-
 import myprojects.sistemadenotas.dominio.AlunoBoletim;
-import myprojects.sistemadenotas.dominio.CalculadoraDeMedia;
+import myprojects.sistemadenotas.dominio.ImpressoraDeNotas;
 
 public class AlunoBoletimTest {
     public static void main(String[] args) {
 
-        CalculadoraDeMedia calculadoraDeMedia = new CalculadoraDeMedia();
+        ImpressoraDeNotas impressora = new ImpressoraDeNotas();
 
         AlunoBoletim LucasSilva = new AlunoBoletim();
         AlunoBoletim BeatrizSouza = new AlunoBoletim();
@@ -56,59 +55,11 @@ public class AlunoBoletimTest {
         GabrielCosta.artes = 8.0;
         MateusOliveira.artes = 7.0;
 
-
-
-        System.out.println("\nNome: " + LucasSilva.nome +
-                "\nPortuguês: " + LucasSilva.portugues +
-                "\nMatemática: " + LucasSilva.matematica +
-                "\nCiências: " + LucasSilva.ciencias +
-                "\nHistória: " + LucasSilva.historia +
-                "\nGeografia: " + LucasSilva.geografia +
-                "\nArtes: " + LucasSilva.artes + "\n");
-        calculadoraDeMedia.Media(LucasSilva.nome, LucasSilva.portugues, LucasSilva.matematica, LucasSilva.ciencias, LucasSilva.historia, LucasSilva.geografia, LucasSilva.artes);
-
-
-        System.out.println("\nNome: " + BeatrizSouza.nome +
-                "\nPortuguês: " + BeatrizSouza.portugues +
-                "\nMatemática: " + BeatrizSouza.matematica +
-                "\nCiências: " + BeatrizSouza.ciencias +
-                "\nHistória: " + BeatrizSouza.historia +
-                "\nGeografia: " + BeatrizSouza.geografia +
-                "\nArtes: " + BeatrizSouza.artes + "\n");
-        calculadoraDeMedia.Media(BeatrizSouza.nome, BeatrizSouza.portugues, BeatrizSouza.matematica, BeatrizSouza.ciencias, BeatrizSouza.historia, BeatrizSouza.geografia, BeatrizSouza.artes);
-
-
-        System.out.println("\nNome: " + MarianaSantos.nome +
-                "\nPortuguês: " + MarianaSantos.portugues +
-                "\nMatemática: " + MarianaSantos.matematica +
-                "\nCiências: " + MarianaSantos.ciencias +
-                "\nHistória: " + MarianaSantos.historia +
-                "\nGeografia: " + MarianaSantos.geografia +
-                "\nArtes: " + MarianaSantos.artes + "\n");
-        calculadoraDeMedia.Media(MarianaSantos.nome, MarianaSantos.portugues, MarianaSantos.matematica, MarianaSantos.ciencias, MarianaSantos.historia, MarianaSantos.geografia, MarianaSantos.artes);
-
-
-        System.out.println("\nNome: " + GabrielCosta.nome +
-                "\nPortuguês: " + GabrielCosta.portugues +
-                "\nMatemática: " + GabrielCosta.matematica +
-                "\nCiências: " + GabrielCosta.ciencias +
-                "\nHistória: " + GabrielCosta.historia +
-                "\nGeografia: " + GabrielCosta.geografia +
-                "\nArtes: " + GabrielCosta.artes + "\n");
-        calculadoraDeMedia.Media(GabrielCosta.nome, GabrielCosta.portugues, GabrielCosta.matematica, GabrielCosta.ciencias, GabrielCosta.historia, GabrielCosta.geografia, GabrielCosta.artes);
-
-
-        System.out.println("\nNome: " + MateusOliveira.nome +
-                "\nPortuguês: " + MateusOliveira.portugues +
-                "\nMatemática: " + MateusOliveira.matematica +
-                "\nCiências: " + MateusOliveira.ciencias +
-                "\nHistória: " + MateusOliveira.historia +
-                "\nGeografia: " + MateusOliveira.geografia +
-                "\nArtes: " + MateusOliveira.artes + "\n");
-        calculadoraDeMedia.Media(MateusOliveira.nome, MateusOliveira.portugues, MateusOliveira.matematica, MateusOliveira.ciencias, MateusOliveira.historia, MateusOliveira.geografia, MateusOliveira.artes);
-
-
-
+        impressora.imprimir(LucasSilva);
+        impressora.imprimir(BeatrizSouza);
+        impressora.imprimir(MarianaSantos);
+        impressora.imprimir(GabrielCosta);
+        impressora.imprimir(MateusOliveira);
 
 
 
