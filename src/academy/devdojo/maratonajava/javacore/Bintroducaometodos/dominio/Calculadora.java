@@ -44,4 +44,28 @@ public class Calculadora {
         System.out.println("Num2: "+ num2);
     }
 
+    public int somaArray(int[] numeros){
+        int soma = 0;
+        for(int i = 0; i < numeros.length; i++){
+            soma += numeros[i];
+        }
+
+        return soma;
+    }
+
+    public void somaVarArgs(int... numeros){
+        int soma = 0;
+        for(int i = 0; i < numeros.length; i++){
+            soma += numeros[i];
+        }
+        System.out.println(soma);
+    }
+
+
+    public int mediaSalarial(int soma, int aSerDividido){
+        return soma / aSerDividido;
+    }
+
+
+
 }
