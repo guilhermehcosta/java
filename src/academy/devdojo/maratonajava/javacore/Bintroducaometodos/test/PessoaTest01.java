@@ -8,6 +8,8 @@ public class PessoaTest01 {
         pessoa.setNome("Jurandir");
         pessoa.setIdade(14);
 
-        System.out.println(pessoa.getNome() +"\n"+ pessoa.getIdade());
+        pessoa.imprime();
+
+       // System.out.println(pessoa.getNome() +"\n"+ pessoa.getIdade());
     }
 }

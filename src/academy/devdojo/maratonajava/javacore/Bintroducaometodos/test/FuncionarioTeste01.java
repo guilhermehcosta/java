@@ -7,21 +7,12 @@ public class FuncionarioTeste01 {
     static void main(String[] args) {
         Funcionario funcionario1 = new Funcionario();
 
-        Calculadora calculadora = new Calculadora();
-
-        funcionario1.nome = "José";
-        funcionario1.idade = 37;
-        funcionario1.salarios = new int[]{1000, 4000, 4566, 7000, 1000};
+        funcionario1.setNome("Jurandir");
+        funcionario1.setIdade(19);
+        funcionario1.setSalarios(new int[]{1000, 2000, 6000, 10000, 20000});
 
         funcionario1.imprime();
-
-
-
-        int soma = calculadora.somaArray(funcionario1.salarios);
-        int aSerDividido = funcionario1.salarios.length;
-        int result = calculadora.mediaSalarial(soma, aSerDividido);
-        System.out.println("\nA média salarial do funcionário foi de "+result+" reais.");
-
+        funcionario1.mediaSalarial();
 
     }
 }
