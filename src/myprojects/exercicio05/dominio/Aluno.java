@@ -26,6 +26,7 @@ public class Aluno {
         }
     }
 
+
     public String getNome() {
         System.out.println(this.nome);
         return nome;
