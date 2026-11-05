@@ -10,5 +10,8 @@ public class DataLoaderTest01 {
 
         dataBaseLoader.load();
         fileLoader.load();
+        dataBaseLoader.remove();
+        fileLoader.remove();
+        dataBaseLoader.checkPermission();
     }
 }
